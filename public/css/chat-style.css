@@ -1,0 +1,147 @@
+/* General Styling */
+body,
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: #ffffff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full view height */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Chat Header */
+.chat-header {
+  background: linear-gradient(
+    148deg,
+    rgba(38, 184, 209, 1) 0%,
+    rgba(17, 0, 7, 0.39117653897496496) 61%
+  );
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.chat-header .btn {
+  background: #726f3f; /* Subdued purple for the button */
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-header .btn:hover {
+  background: #5d5491; /* Button hover effect */
+}
+
+/* Sidebar */
+.chat-sidebar {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(38, 97, 170, 0.19509810760241597) 23%
+  );
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.chat-sidebar h3 {
+  margin-top: 0;
+}
+
+#room-name {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#users {
+  list-style: none;
+  padding: 0;
+}
+
+#users li {
+  padding: 0.5rem 0;
+}
+
+/* Chat Main Area */
+.chat-main {
+  flex: 1;
+  display: flex;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Chat Form */
+.chat-form-container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.chat-form-container form {
+  display: flex;
+  width: 100%;
+}
+.text {
+  background: linear-gradient(
+    148deg,
+    rgba(38, 184, 209, 1) 0%,
+    rgba(17, 0, 7, 0.133473457742472) 61%
+  );
+}
+
+.chat-form-container input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 2px solid #4b3f72; /* Border color for input */
+  margin-right: 1rem;
+}
+
+.chat-form-container button {
+  background: #4b3f72; /* Same as button in header */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-form-container button:hover {
+  background: #5d5491; /* Hover effect for send button */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .chat-container {
+    flex-direction: column;
+  }
+
+  .chat-sidebar,
+  .chat-messages {
+    width: 100%;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ChatCord App</title>
+</head>
+<body>
+    <div class="header-section">
+        <nav class="navigation">
+            <div class="logo">TrioTech Chat</div>
+            <div class="nav-links">
+                <a href="#welcome">Home</a>
+                <a href="#about">About</a>
+                <a href="#technology">Technology</a>
+                <a href="#features">Features</a>
+                <a href="#team">Team</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#join">Join</a>
+            </div>
+        </nav>
+    </div>
+
+    <div id="welcome" class="welcome-section">
+        <h2>Welcome to TrioTech Chat Application</h2>
+        <p>Connect and share your ideas in real-time with people around the world!</p>
+    </div>
+
+    <div id="about" class="about-section">
+        <h3>Who We Are & Why We Built This</h3>
+        <p>TrioTech is a team of passionate developers committed to creating innovative web solutions. The ChatCord app is designed to facilitate seamless communication, enabling users to share knowledge and engage in discussions across various topics. Our goal is to connect communities through technology.</p>
+    </div>
+
+    <div id="technology" class="tech-section">
+        <h3>Our Technology Stack</h3>
+        <p>We leverage MongoDB for flexible data storage, React for a dynamic and responsive front-end, and Node.js to handle server-side logic efficiently. This combination ensures a robust and scalable real-time chat application.</p>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="features-section">
+        <h2>App Features</h2>
+        <div class="feature-box">
+            <h3>Real-Time Messaging</h3>
+            <p>Instantly chat with users across the globe without any delay.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Multiple Chat Rooms</h3>
+            <p>Join conversations on a variety of topics in dedicated rooms.</p>
+        </div>
+        <div class="feature-box">
+            <h3>User-Friendly Interface</h3>
+            <p>Easily navigate through the app for a seamless experience.</p>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="team" class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="path/to/image" alt="Team Member">
+			<div class="team-member">
+				<img src="https://i.ibb.co/kGc4LnT/profile-pic-Red.jpg" alt="Onur Korkmaz">
+				
+				<p><strong>Owner and Lead Full Stack Developer</strong></p>
+				<p>With a robust background in Computer Science and over 3 years of industry experience, Onur specializes in JavaScript technologies, including Node.js, React, and Angular. His passion for development and leadership as the owner of TrioTech has been instrumental in driving the innovation behind the ChatCord application, showcasing his commitment to leveraging technical skills for robust application development and database management.</p>
+			</div>
+
+			<div class="team-member">
+				<img src="https://media.licdn.com/dms/image/D5603AQHzP_RJqbVczA/profile-displayphoto-shrink_800_800/0/1686627062857?e=2147483647&v=beta&t=gwn1Gg4njhpsTkot1-bm5Wyp-ws8U8xl-M-UfTXmiMM" alt="Safa Aru">
+				
+				<p><strong>Owner and Lead Full Stack Developer</strong></p>
+				<p>As the project manager at TrioTech, brings over 3 years of comprehensive experience in Full Stack Development, specializing in JavaScript technologies such as Node.js, React, and Angular. Her exceptional organizational skills and proficiency in Agile methodologies have significantly contributed to the streamlined development and successful deployment of the ChatCord application, ensuring efficient team collaboration and project delivery.</p>
+			</div>
+			
+			
+        </div>
+        <!-- Add more team members as needed -->
+    </div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="testimonials-section">
+        <h2>User Testimonials</h2>
+        <div class="testimonial-box">
+            <p>"ChatCord has transformed the way we communicate as a community. Highly recommend!"</p>
+            <cite>- User Name</cite>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+        <h2>Ready to Join the Conversation?</h2>
+        <p>Sign up now to start chatting with users from around the world.</p>
+        <a href="#join" class="cta-button">Join Now</a>
+    </div>
+
+    <div id="join" class="join-container">
+        <header class="join-header">
+            <h1><i class="fas fa-smile"></i> Join a Chat Room</h1>
+        </header>
+        <main class="join-main">
+            <form action="chat.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter username..." required>
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="News">News</option>
+                        <option value="Earth">Earth</option>
+                        <option value="Spring">Spring Boot</option>
+                        <option value="NodeJs">NodeJs</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join Chat</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 TrioTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
